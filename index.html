@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Lucky Spin</title>
+  </head>
+  <body>
+    <section id="home">
+      <div class="container">
+        <div class="contentwrapper">
+          <div class="game-name">LUCKY <span>$</span>PIN</div>
+          <div class="title" id="title">Register Here</div>
+          <div class="sub-title">Free <span>$100</span> For New Account!</div>
+          <div id="registerForm">
+              <input type="text" placeholder="Username" id="username">
+              <button type="submit" id="reg-btn" onclick="register()">Register</button>
+          </div>
+          <button class="logout-btn" onclick="logout()" id="logoutForm">Logout</button>
+          <div class="anonymous">
+            <p>*If you don't want <span>TO BE KNOWN</span>, you can still click <span>REGISTER</span> without input your name and your <span>USERNAME</span> will be <span class="anon">"anonymous"</span>.</p>
+          </div>
+          <div class="balance">Your Balance: $<span class="dolar">100</span></div>
+        </div>
+      </div>
+    </section>
+    <section id="start">
+      <div class="container red">
+        <div class="gamewrapper">
+          <div class="box" id="box1"></div>
+          <div class="box" id="box2"></div>
+          <div class="box" id="box3"></div>
+          <div class="box" id="box4"></div>
+          <div class="box" id="box5"></div>
+        </div>
+        <div class="buttonwrapper">
+          <div class="lose-alert">You lose...</div>
+          <button class="startButton">SPIN $<span id="spin-number">5</span></button>
+          <button class="plus">➕</button>
+        </div>
+        <div class="note">
+          <p class="rangereward">*Reward: $40 ~ $100</p>
+          <p>*Try your luck to get JACKPOT</p>
+          <p class="tips">*You haven't win yet? Your don't have enough balance? Try to <span>LOGOUT</span> then <span>REGISTER</span> to get another free $100</p>
+        </div>
+        
+      </div>
+    </section>
+    <section id="reward">
+      <div class="container blue">
+        <div class="contentwrapper" id="imgReward"> 
+          <h1 class="jackpot">JACKP<span>🪙</span>T!</h1>
+          <h2>You Get <span id="dol">$</span><span id="spanbaru"></span></h2>
+          <button id="claim">Claim</button>
+        </div>
+      </div>
+    </section>
+    <script src="module/Player.js"></script>
+    <script src="init.js"></script>
+  </body>
+</html>

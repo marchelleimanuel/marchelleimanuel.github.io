@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2/family=Patrick+Hand&display=swap');
+
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Patrick Hand', cursive;
+}
+
+section {
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: #222;
+}
+
+.red {
+  background-color: crimson;
+}
+
+.blue {
+  background-color: slateblue;
+}
+
+.title {
+  text-align: center;
+  font-size: 3em;
+  color: white;
+}
+
+
+.contentwrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.contentwrapper h1 {
+	margin-top: 20px;
+}
+
+.contentwrapper h2 {
+	margin-top: 20px;
+	font-size: 4rem;
+}
+
+.contentwrapper button {
+	margin-top: 50px;
+	padding: 5px 10px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	color: white;
+	background-color: transparent;
+	border: none;
+	font-size: 1.2rem;
+	cursor: pointer;
+	font-weight: bold;
+	text-transform: uppercase;
+	transition: .3s;
+	-webkit-transition: .3s;
+	-moz-transition: .3s;
+	-ms-transition: .3s;
+	-o-transition: .3s;
+	
+}
+
+.contentwrapper button:hover {
+	background-color: white;
+	color: black;
+}
+
+.contentwrapper .spanbaru {
+	color: #FFD700;
+}
+
+.jackpot {
+	font-size: 6rem;
+	margin-top: -400px;
+	letter-spacing: 10px;
+	color: #FFD700;
+}
+
+.jackpot span {
+	margin: 0 -20px;
+}
+
+#dol {
+	color: #FFD700;
+}
+
+.game-name {
+	font-size: 5rem;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 50px;
+	letter-spacing: 20px;
+	color: red;
+}
+
+.game-name span {
+	color: #335755;
+}
+
+.title {
+	font-size: 4rem;
+}
+
+.sub-title {
+	color: white;
+	margin: 5px 0;
+}
+
+.sub-title span {
+	font-weight: bold;
+	color: red;
+	margin: 0 5px;
+}
+
+#registerForm {
+	text-align: center;
+}
+
+#username {
+	margin: 20px 0 10px;
+	display: block;
+	width: 250px;
+	padding: 5px 5px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+
+#username:focus {
+	background-color: rgb(230, 230, 230);
+}
+
+#reg-btn {
+	/*display: inline-block;
+	*/margin-top: 20px;
+	padding: 5px 10px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	color: white;
+	background-color: transparent;
+	border: none;
+	font-size: 1.2rem;
+	cursor: pointer;
+	font-weight: bold;
+	text-transform: uppercase;
+	transition: .3s;
+	-webkit-transition: .3s;
+	-moz-transition: .3s;
+	-ms-transition: .3s;
+	-o-transition: .3s;
+}
+
+
+#reg-btn:hover {
+	background-color: white;
+	color: black;
+}
+
+.logout-btn {
+	margin-top: 20px;
+	padding: 5px 10px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	color: white;
+	background-color: transparent;
+	border: none;
+	font-size: 1.2rem;
+	cursor: pointer;
+	font-weight: bold;
+	text-transform: uppercase;
+	transition: .3s;
+	-webkit-transition: .3s;
+	-moz-transition: .3s;
+	-ms-transition: .3s;
+	-o-transition: .3s;
+}
+
+.logout-btn:hover {
+	background-color: white;
+	color: black;
+}
+
+.anonymous {
+	margin-top: 80px;
+}
+
+.anonymous p {
+	color: white;
+	font-size: 0.8rem;
+	text-align: center;
+}
+
+.anonymous span {
+	color: red;
+	font-weight: bold;
+}
+
+.anonymous .anon {
+	font-size: 1.2rem;
+	color: yellow;
+}
+
+.balance {
+	position: fixed;
+	top: 25px;
+	right: 50px;
+	color: white;
+	font-weight: bold;
+	font-size: 1.2rem;
+}
+
+.gamewrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+}
+
+.buttonwrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lose-alert {
+	position: absolute;
+	margin-top: -170px;
+	font-size: 1.5rem;
+	color: white;
+	font-weight: bold;
+}
+
+#logoutButton {
+  display: none;
+}
+
+.startButton {
+	padding: 5px 10px;
+	font-weight: bold;
+	color: white;
+	border: none;
+	background-color: whitesmoke;
+	color: black;
+	font-size: 2em;
+	cursor: pointer;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+}
+
+.startButton:hover {
+	background-color: yellow;
+}
+
+.plus {
+	margin-left: 20px;
+	padding: 5px 10px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	color: white;
+	background-color: transparent;
+	border: none;
+	font-size: 2rem;
+	cursor: pointer;
+	font-weight: bold;
+	text-transform: uppercase;
+	transition: .3s;
+	-webkit-transition: .3s;
+	-moz-transition: .3s;
+	-ms-transition: .3s;
+	-o-transition: .3s;
+}
+
+.plus:hover {
+	background-color: yellow;
+}
+
+.note {
+	margin-top: 30px;
+	text-align: center;
+}
+
+.rangereward {
+	color: #FFD700;
+	font-size: 1.4rem;
+}
+
+.note .tips {
+	color: white;
+	font-weight: bold;
+}
+
+.note .tips span {
+	color: yellow;
+}
+
+.box {
+  font-size: 5em;
+  margin: 10px;
+  padding: 15px;
+  border: 5px solid white;
+}
+
+.navigation {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+}
+
+.nav {
+  list-style-type: none;
+  padding: 20px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.nav:hover {
+  background-color: #eaeaea;
+  border-radius: 10px;
+  transition: all ease-in-out .25s;
+}
+
+.nav:hover>a {
+  color: #222;
+}
+
+.navlink {
+  color: white;
+  font-size: 1.2em;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 75px;
+  height: 75px;
+  background-color: wheat;
+  border-radius: 15px;
+}
+
+#reward {
+	text-align: center; 
+}
+
+@media screen and (max-width: 560px) {
+	.box {
+		font-size: 10vw;
+	}
+
+	.contentwrapper h2 {
+		font-size: 10vw;
+	}
+
+	.jackpot {
+		font-size: 12vw;
+	}
+
+	
+
+}
+
+
+
+
+
+
+
+
+
