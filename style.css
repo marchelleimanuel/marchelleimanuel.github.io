@@ -386,7 +386,7 @@ section {
 
 @media screen and (max-width: 560px) {
 	.box {
-		font-size: 10vw;
+		font-size: 12vw;
 	}
 
 	.contentwrapper h2 {
@@ -396,10 +396,22 @@ section {
 	.jackpot {
 		font-size: 12vw;
 	}
-
-	
-
 }
+
+@media (max-width: 860px) {
+	.gamewrapper {
+		display: flex;
+		flex-wrap: wrap;
+		padding: 100px auto;
+		margin-bottom: 50px;
+		padding-top: 100px;
+	}
+
+	.buttonwrapper {
+		margin: 150px auto 0;
+	}
+}
+
 
 
 
